@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор даты и времени</title>
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="calendar-container">
+        <!-- Шапка календаря с кнопками переключения -->
+        <div class="calendar-header">
+            <button class="btn-prev-month">«</button>
+            <span class="calendar-month-label">Октябрь 2026</span>
+            <button class="btn-next-month">»</button>
+        </div>
+
+        <!-- Сетка дней недели (статическая) -->
+        <div class="week-days-grid">
+            <div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div>
+        </div>
+
+        <!-- Контейнер для дней месяца (сюда JS будет вставлять числа) -->
+        <div class="calendar-grid"></div>
+    </div>
+
+    <!-- Контейнер для слотов времени (сюда JS будет вставлять кнопки времени) -->
+    <div class="time-slots-container"></div>
+
+    <!-- Нижняя панель, где будет выводиться итоговый текст -->
+    <div class="bottom-panel">Выберите дату и время</div>
+
+    <!-- КРИТИЧЕСКИ ВАЖНО: Подключаем скрипт в самом низу перед </body> -->
+    <script src="script.js"></script>
+</body>
+</html>
